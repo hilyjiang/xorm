@@ -851,6 +851,6 @@ func (session *Session) Tx() *core.Tx {
 }
 
 // Statement returns the Statement of session
-func (session *Session) Statement() *Statement {
+func (session *Session) Statement() Statement {
 	return session.statement
 }
