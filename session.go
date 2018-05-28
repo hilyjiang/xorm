@@ -839,3 +839,8 @@ func (session *Session) Unscoped() *Session {
 	session.statement.Unscoped()
 	return session
 }
+
+// Engine returns the Engine of session
+func (session *Session) Engine() *Engine {
+	return session.engine
+}
