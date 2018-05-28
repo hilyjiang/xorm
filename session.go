@@ -844,3 +844,13 @@ func (session *Session) Unscoped() *Session {
 func (session *Session) Engine() *Engine {
 	return session.engine
 }
+
+// Tx returns the Tx of session
+func (session *Session) Tx() *core.Tx {
+	return session.tx
+}
+
+// Statement returns the Statement of session
+func (session *Session) Statement() *core.Statement {
+	return session.statement
+}
